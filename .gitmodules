@@ -1,0 +1,3 @@
+[submodule "PG4600-Android"]
+	path = PG4600-Android
+	url = https://github.com/anitailieva/PG4600-Android.git
