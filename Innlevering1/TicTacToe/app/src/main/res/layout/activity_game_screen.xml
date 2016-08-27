@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/player1"
+        android:textSize="20sp"
+        android:text="@string/player_one"
+        android:textColor="@color/colorGameTextRed"
+        android:layout_marginBottom="46dp"
+        android:layout_above="@+id/game_board"
+        android:layout_toLeftOf="@+id/btnResults"
+        android:layout_toStartOf="@+id/btnResults"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp" />
+
+    <TextView
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/player2"
+        android:text="@string/player_two"
+        android:textSize="20sp"
+        android:layout_gravity="end"
+        android:textColor="@color/colorGameTextBlue"
+        android:layout_alignTop="@+id/player1"
+        android:layout_alignLeft="@+id/btnResults"
+        android:layout_alignStart="@+id/btnResults" />
+
+
+
+    <TableLayout
+        android:id="@+id/game_board"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorBackground">
+
+    <TableRow
+        android:gravity="center_horizontal">
+
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/bnt1"
+            android:src="@drawable/box"
+            android:layout_margin="5dp"
+            android:background="@color/colorGameBoxes"
+            />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/btn2"
+            android:contentDescription="@string/two"
+            android:layout_margin="5dp"
+            android:background="@color/colorGameBoxes"
+            />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/btn3"
+            android:contentDescription="@string/three"
+            android:layout_margin="5dp"
+            android:background="@color/colorGameBoxes"
+             />
+    </TableRow>
+
+        <TableRow
+            android:gravity="center_horizontal">
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/btn4"
+            android:contentDescription="@string/four"
+            android:layout_margin="5dp"
+            android:background="@color/colorGameBoxes"
+            />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/btn5"
+            android:contentDescription="@string/five"
+            android:layout_margin="5dp"
+            android:background="@color/colorGameBoxes"
+            />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/btn6"
+            android:contentDescription="@string/six"
+            android:layout_margin="5dp"
+            android:background="@color/colorGameBoxes"
+            />
+
+    </TableRow>
+
+        <TableRow
+            android:gravity="center_horizontal">
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/btn7"
+        android:contentDescription="@string/seven"
+        android:layout_margin="5dp"
+        android:background="@color/colorGameBoxes"
+        />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/btn8"
+        android:contentDescription="@string/eight"
+        android:layout_margin="5dp"
+        android:background="@color/colorGameBoxes"
+        />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/btn9"
+        android:contentDescription="@string/nine"
+        android:layout_margin="5dp"
+        android:background="@color/colorGameBoxes"
+        />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/play_again"
+        android:id="@+id/btnPlayAgain"
+        android:layout_alignTop="@+id/btnResults"
+        android:layout_alignLeft="@+id/player1"
+        android:layout_alignStart="@+id/player1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/res"
+        android:id="@+id/btnResults"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtView"
+        android:text="@string/results"
+        android:textColor="@color/colorWhite"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/btnPlayAgain"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status"
+        android:id="@+id/statusView"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/game_board"
+        android:layout_above="@+id/txtView"
+        android:textColor="@color/colorWhite"/>
+
+
+</RelativeLayout>
