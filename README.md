@@ -1,3 +1,3 @@
-# PG4600 - Android Development
+## PG4600 - Android Development
 
-## Tic Tac Toe
+Tic Tac Toe game
